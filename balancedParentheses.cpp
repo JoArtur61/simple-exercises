@@ -2,14 +2,14 @@
 #include <string>
 using namespace std;
 
-bool parenthesesAreBalanced(string expression);
+bool balancedParentheses(expression);
 
 int main()
 {
 	string expression;
 	cin >> expression;
 	
-	if (parenthesesAreBalanced(expression)) {
+	if (balancedParentheses(expression)) {
 		cout << "correct." << endl;
 	} else {
 		cout << "incorrect." << endl;
@@ -18,7 +18,7 @@ int main()
 	return 0;
 }
 
-bool parenthesesAreBalanced(string expression)
+bool balancedParentheses(string expression)
 {
 	int opened = 0;
 	for (int i = 0; i < expression.size() && opened >= 0; i++)
