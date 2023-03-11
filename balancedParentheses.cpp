@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-bool balancedParentheses(expression);
+bool balancedParentheses(const string& expression);
 
 int main()
 {
@@ -18,7 +18,7 @@ int main()
 	return 0;
 }
 
-bool balancedParentheses(string expression)
+bool balancedParentheses(const string& expression)
 {
 	int opened = 0;
 	for (int i = 0; i < expression.size() && opened >= 0; i++)
